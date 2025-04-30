@@ -13,7 +13,7 @@ def criar_campo(tamanho = 5, num_minas = 5):
 
 serverPort = 12001
 serverSocket = socket(AF_INET, SOCK_STREAM)
-serverSocket.bind(('localhost', serverPort))
+serverSocket.bind(('localhost', serverPort)) # Altere para o IP do servidor se necessário
 serverSocket.listen(1)
 
 print("🚀 Servidor Campo Minado pronto para conexões...")
