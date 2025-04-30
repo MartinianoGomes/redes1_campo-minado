@@ -1,9 +1,10 @@
 from socket import *
 import random
 
-def criar_campo(tamanho=5, num_minas=5):
+def criar_campo(tamanho = 5, num_minas = 5):
     campo = [[' ' for _ in range(tamanho)] for _ in range(tamanho)]
     minas = set()
+
     while len(minas) < num_minas:
         linha = random.randint(0, tamanho-1)
         coluna = random.randint(0, tamanho-1)
